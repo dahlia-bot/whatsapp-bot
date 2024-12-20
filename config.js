@@ -73,7 +73,7 @@ module.exports = {
         }),
   NO_ONLINE:
     process.env.NO_ONLINE === undefined
-      ? true
+      ? false
       : convertToBool(process.env.NO_ONLINE),
   CLR_SESSION:
     process.env.CLR_SESSION === undefined
@@ -85,11 +85,11 @@ module.exports = {
     process.env.REMOVEBG_KEY === undefined ? "false" : process.env.REMOVEBG_KEY,
   WARN_COUNT: process.env.WARN_COUNT === undefined ? 3 : process.env.WARN_COUNT,
   WARN_MSG:
-    process.env.WARN_MSG === undefined ? "Ok bie" : process.env.WARN_MSG,
+    process.env.WARN_MSG === undefined ? "Hai": process.env.WARN_MSG,
   ANTIJID: process.env.ANTIJID === undefined ? "" : process.env.ANTIJID,
   STICKER_PACKNAME:
     process.env.STICKER_PACKNAME === undefined
-      ? "🥰,lyfe00011"
+      ? "dahlia bot"
       : process.env.STICKER_PACKNAME,
   BRAINSHOP:
     process.env.BRAINSHOP === undefined
@@ -101,4 +101,4 @@ module.exports = {
     process.env.FIND_API_KEY === undefined
       ? "null"
       : process.env.FIND_API_KEY,
-}
+  AUTO_STATUS_VIEW === undefined ? true
